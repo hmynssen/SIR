@@ -127,7 +127,7 @@ class SEIR3():
     # The SEIR model differential equations.
     def Evolve(self):
         ##Evolve the system by the following rules/EDO
-        dS = - self.beta * self.S * (self.I0 + self.I1 + self.I2) / self.N
+        dS = - self.beta * self.S * (self.I0) / self.N
 
 
         ##  The I0 population, since it is assymptomatic,
